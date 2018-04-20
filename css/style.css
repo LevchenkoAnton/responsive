@@ -226,3 +226,111 @@ a:hover {
   vertical-align: middle;
   width: 100%;
 }
+.team {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 15px 100px 15px;
+}
+.team__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.team__description {
+  position: relative;
+  max-width: 450px;
+  margin: 0;
+  padding-left: 10px;
+  margin-bottom: 100px;
+  line-height: 25px;
+}
+.team__description:after {
+  position: absolute;
+  content: '';
+  bottom: -25px;
+  left: 10px;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background: #ff3f40;
+}
+.employee {
+  display: flex;
+  justify-content: space-between;
+}
+.employee__img {
+  display: block;
+  margin: 0 10px;
+  min-width: 320px;
+  min-height: 460px;
+  background: #f5f0dd;
+}
+.employee__name {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.employee__description {
+  max-width: 640px;
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 25px;
+}
+.employee__preview-list {
+  margin: 0;
+  padding: 0;
+}
+.employee__preview-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  min-width: 200px;
+  min-height: 210px;
+  text-align: center;
+  background: #f5f0dd;
+}
+.employee__preview-item:last-child {
+  margin-right: 0;
+}
+.employee__preview-name {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  display: none;
+  margin: 0;
+  padding: 3px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #7a786e;
+}
+.employee__preview-item:hover .employee__preview-name {
+  display: block;
+}
+.social__list {
+  margin: 0;
+  margin-bottom: 65px;
+  padding: 0;
+}
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link {
+  color: #585858;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+}
