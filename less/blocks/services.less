@@ -1,0 +1,83 @@
+.services {
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 15px 60px 15px;
+  border-bottom: 2px solid @services-border-bg;
+
+  &__text,
+  &__list {
+    width: 50%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    .base-title;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 50px;
+    line-height: 25px;
+  }
+
+  &__btn {
+    color: @btn-bg;
+    background-color: transparent;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 290px;
+    margin-bottom: 40px;
+    padding-top: 70px;
+  }
+
+  &__item:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__item--management:before {
+    background: url("../img/settings-icon.png") no-repeat center left;
+  }
+
+  &__item--design:before {
+    background: url("../img/pencil-icon.png") no-repeat center left;
+  }
+
+  &__item--branding:before {
+    background: url("../img/diamond-icon.png") no-repeat center left;
+  }
+
+  &__item--animation:before {
+    background: url("../img/truck-icon.png") no-repeat center left;
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__item-description {
+      line-height: 25px;
+  }
+}

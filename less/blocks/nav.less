@@ -1,0 +1,31 @@
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  background: @nav-bg;
+  text-align: center;
+
+  &__list {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    padding: 0 25px;
+  }
+
+  &__link {
+    color: @link-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__item--active {
+    background: @active-link-bg;
+  }
+}
