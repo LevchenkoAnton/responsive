@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
@@ -13,6 +14,7 @@
   &__title {
     margin: 0;
     margin-bottom: 30px;
+    font-weight: 800;
     font-size: 60px;
     text-transform: uppercase;
   }
@@ -26,5 +28,61 @@
     max-width: 550px;
     background: @video-bg;
     box-shadow: 0 14px 73px 0 rgba(0, 0, 0, 0.29);
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .about {
+
+    &__text,
+    &__video {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-bottom: 50px;
+    }
+
+    &__video {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 50px 15px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+
+    &__description {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .about {
+    padding: 30px 15px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
   }
 }

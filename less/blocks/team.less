@@ -13,9 +13,7 @@
 
   &__description {
     position: relative;
-    max-width: 450px;
     margin: 0;
-    padding-left: 10px;
     margin-bottom: 100px;
     line-height: 25px;
   }
@@ -24,7 +22,7 @@
     position: absolute;
     content: '';
     bottom: -25px;
-    left: 10px;
+    left: 0;
     display: block;
     width: 130px;
     height: 2px;
@@ -37,10 +35,9 @@
   justify-content: space-between;
 
   &__img {
-    display: block;
-    margin: 0 10px;
-    min-width: 320px;
-    min-height: 460px;
+    display: inline-block;
+    width: 320px;
+    height: 460px;
     background: @photo-bg;
   }
 
@@ -53,13 +50,15 @@
   }
 
   &__description {
-    max-width: 640px;
     margin: 0;
     margin-bottom: 35px;
     line-height: 25px;
   }
 
   &__preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
   }
@@ -68,26 +67,21 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 20px;
+    margin: 0 5px;
     min-width: 200px;
     min-height: 210px;
     text-align: center;
     background: @photo-bg;
   }
 
-  &__preview-item:last-child {
-    margin-right: 0;
-  }
-
   &__preview-name {
     position: absolute;
-    box-sizing: border-box;
     bottom: 0;
     display: none;
     margin: 0;
     padding: 3px;
     width: 100%;
-    color: @name-color;
+    color: @light-color;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
@@ -125,5 +119,115 @@
     font-size: 18px;
     font-style: italic;
     text-decoration: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .team {
+    text-align: center;
+
+    &__description:after {
+      left: 50%;
+      margin-left: -65px;
+    }
+  }
+
+  .employee {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__preview-list {
+      justify-content: center;
+    }
+
+    &__preview-item {
+      margin-bottom: 10px;
+    }
+
+    &__img {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .team {
+    padding: 50px 15px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    &__description {
+      margin-bottom: 50px;
+    }
+
+    &__description br{
+      display: none;
+    }
+
+    &__description:after {
+      bottom: -20px;
+    }
+  }
+
+  .employee {
+
+    &__description br {
+      display: none;
+    }
+
+    &__img {
+      width: 230px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .team {
+    padding: 30px 15px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+  }
+
+  .employee {
+
+    &__name {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+    }
+  }
+
+  .social {
+
+    &__list {
+      margin-bottom: 35px;
+    }
+
+    &__item {
+      margin-right: 10px;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
   }
 }

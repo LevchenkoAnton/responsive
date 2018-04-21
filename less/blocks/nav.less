@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
@@ -27,5 +28,80 @@
 
   &__item--active {
     background: @active-link-bg;
+  }
+
+  &__btn {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__btn:before {
+    position: absolute;
+    content: '';
+    right: 10px;
+    top: 17px;
+    width: 23px;
+    height: 4px;
+    background: @light-color;
+
+    box-shadow: 0 4px 0 transparent,
+    0 8px 0 @light-color,
+    0 12px 0 transparent,
+    0 16px 0 @light-color;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+
+    &__item {
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .nav {
+    height: 50px;
+
+    &__list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: @nav-bg;
+    }
+
+    &__item {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      height: 50px;
+      border-top: 1px solid lighten(@nav-bg, 40%);
+      border-bottom: 1px solid lighten(@nav-bg, 20%);
+    }
+
+    &__btn {
+      display: block;
+      z-index: 1;
+    }
+
+    &__closed {
+
+      .nav__item {
+        display: none;
+      }
+    }
   }
 }

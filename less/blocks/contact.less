@@ -1,0 +1,198 @@
+.contact {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 15px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    .base-title;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    position: relative;
+    margin: 0;
+    margin-bottom: 120px;
+    line-height: 25px;
+  }
+
+  &__description:after {
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    left: 0;
+    display: block;
+    width: 130px;
+    height: 2px;
+    background: @active-link-bg;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+    max-width: 730px;
+  }
+
+  &__input,
+  &__message {
+    display: inline-block;
+    padding: 20px 30px;
+    width: 340px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    background: @input-bg;
+  }
+
+  &__input--name {
+    margin-right: 45px;
+  }
+
+  &__message {
+    width: 100%;
+  }
+
+  &__btn {
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: inline-block;
+    float: right;
+    padding: 100px 80px;
+    color: @light-color;
+    background: @info-bg;
+  }
+}
+
+.info {
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+    .base-title;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 8px;
+    line-height: 25px;
+  }
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  line-height: 0;
+}
+
+@media (max-width: 1200px) {
+
+  .contact {
+    text-align: center;
+
+    &__description:after {
+      left: 50%;
+      margin-left: -65px;
+    }
+
+    &__form {
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .info {
+
+    &__description br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 50px 15px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    &__description {
+      margin-bottom: 60px;
+    }
+
+    &__description br {
+      display: none;
+    }
+
+    &__description:after {
+      bottom: -20px;
+    }
+
+    &__input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__message {
+      margin-bottom: 20px;
+    }
+
+    &__info {
+      padding: 50px 15px;
+    }
+  }
+
+  .info {
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__description {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .contact {
+    padding: 30px 15px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    &__input {
+      padding: 15px 20px;
+    }
+  }
+}

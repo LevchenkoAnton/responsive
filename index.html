@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item  nav__item--active">
+            <button type="button" class="nav__btn">Меню</button>
+            <ul class="nav__list nav__closed">
+                <li class="nav__item nav__item--active">
                     <a href="#" class="nav__link">home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">portfolio</a>
+                    <a href="#feature" class="nav__link">portfolio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">about us</a>
+                    <a href="#team" class="nav__link">about us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">contact</a>
+                    <a href="#contact" class="nav__link">contact</a>
                 </li>
             </ul>
         </nav>
@@ -87,7 +88,7 @@
         </div><!--services list-->
     </section>
 
-    <section class="feature">
+    <section class="feature" id="feature">
         <h2 class="feature__title">feature products</h2>
         <p class="feature__description">
             Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do <br>
@@ -141,10 +142,10 @@
         </div><!--products list-->
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <h2 class="team__title">Meet our team</h2>
         <p class="team__description">
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed <br>
             dooing eiusmod tempor incididut labore Ui / Ux , print template.
         </p>
         <div class="employee">
@@ -152,7 +153,7 @@
             <div class="employee__about">
                 <h3 class="employee__name">mark waugh</h3>
                 <p class="employee__description">
-                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor
+                    Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor  <br>
                     incididut labore Ui / Ux , print template.
                 </p>
                 <ul class="social__list">
@@ -191,7 +192,69 @@
         </div>
     </section>
 
+    <section class="dispatch">
+        <div class="dispatch__wrapper">
+            <h2 class="dispatch__title">Design tips, tricks, and freebies. Delivered weekly.</h2>
+            <p class="dispatch__description">
+                Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
+            </p>
+            <form action="#" class="dispatch__form">
+                <input type="email" class="dispatch__input" required placeholder="Email Address...">
+                <button type="submit" class="dispatch__btn btn">subscribe</button>
+            </form>
+        </div>
+    </section>
 
+    <section class="contact clearfix" id="contact">
+        <h2 class="contact__title">get in touch</h2>
+        <p class="contact__description">
+            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut <br>
+            labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed <br>
+            do eiusmod tempor incididunt ut labore et.
+        </p>
+        <form action="#" class="contact__form">
+            <input type="text" class="contact__input contact__input--name" required placeholder="Name">
+            <input type="email" class="contact__input contact__input--email" required placeholder="Your Mail">
+            <textarea class="contact__message" name="message" id="message" required placeholder="Type your message" cols="30" rows="10"></textarea>
+            <button type="submit" class="contact__btn btn">Send message</button>
+        </form>
+        <div class="contact__info">
+            <h3 class="info__title">contact info</h3>
+            <p class="info__description info__description--adres">
+                Jalalabad 24 / A, Ambaarkhana, Sylhet, <br>
+                Bangladesh
+            </p>
+            <p class="info__description info__description--email">
+                redwan@deviserweb.com
+            </p>
+            <p class="info__description info__description--phone">
+                (+88) 017 617 46373
+            </p>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <p class="footer__coppyright">
+                © Copyright @Junaed 2016, All rights reserved.
+            </p>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link footer__social-link--twitter">twitter</a>
+                </li><!--social link-->
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link footer__social-link--linkedin">linkedin</a>
+                </li><!--social link-->
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link footer__social-link--google">google</a>
+                </li><!--social link-->
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link footer__social-link--facebook">facebook</a>
+                </li><!--social link-->
+            </ul><!--social list-->
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
