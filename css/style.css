@@ -111,9 +111,12 @@ a:hover {
   }
 }
 .about {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
   padding: 100px 15px;
@@ -189,8 +192,10 @@ a:hover {
   background: #ff2d2d;
 }
 .services {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
   padding: 100px 15px 60px 15px;
@@ -218,9 +223,12 @@ a:hover {
   background-color: transparent;
 }
 .services__list {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 .services__item {
   position: relative;
@@ -260,7 +268,8 @@ a:hover {
 }
 @media (max-width: 1200px) {
   .services {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .services__text {
     width: 100%;
@@ -268,7 +277,8 @@ a:hover {
   }
   .services__list {
     width: 100%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .services__btn {
     margin-bottom: 50px;
@@ -368,9 +378,12 @@ a:hover {
   color: #ff3f40;
 }
 .products__list {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .products__item {
   min-width: 290px;
@@ -454,8 +467,10 @@ a:hover {
   background: #ff3f40;
 }
 .employee {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 .employee__img {
   display: inline-block;
@@ -476,9 +491,12 @@ a:hover {
   line-height: 25px;
 }
 .employee__preview-list {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -536,12 +554,15 @@ a:hover {
     margin-left: -65px;
   }
   .employee {
-    flex-direction: column;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
     text-align: center;
   }
   .employee__preview-list {
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .employee__preview-item {
     margin-bottom: 10px;
@@ -625,8 +646,10 @@ a:hover {
   font-size: 16px;
 }
 .dispatch__form {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .dispatch__input {
   display: inline-block;
@@ -664,7 +687,8 @@ a:hover {
     font-size: 22px;
   }
   .dispatch__form {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .dispatch__input {
     width: auto;
@@ -702,9 +726,12 @@ a:hover {
   background: #ff3f40;
 }
 .contact__form {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   float: left;
   max-width: 730px;
 }
